@@ -52,39 +52,11 @@ The `neonyx.ipynb` notebook provides a detailed analysis of the dataset, includi
 
 You can view the full analysis in the [neonyx.ipynb](neonyx.ipynb) notebook.
 
-## Future Work
-The analysis and findings presented in this study open several exciting avenues for future research and development. Here are some potential directions for future work:
-
-1. **Refinement of Text Processing Techniques** ✨:
-   - **Enhancing text preprocessing** methods to better handle variations in language, slang, and regional dialects can improve the accuracy of personality analysis.
-   - **Incorporating advanced NLP techniques** such as BERT or GPT for a deeper semantic understanding of descriptions.
-
-2. **Expanding the Dataset** 📈:
-   - **Mining more data**: We are currently in the process of collecting additional personality descriptions from various sources to expand the size of our dataset.
-   - **Including more personality systems** beyond MBTI, such as the Big Five or Enneagram, to create a more comprehensive personality typing model.
-
-3. **Temporal Analysis** ⏳:
-   - Investigating how descriptions of personality types **change over time** can provide insights into the evolving nature of personality traits and societal perceptions.
-   - Analyzing the impact of **major events or cultural shifts** on the language used to describe personality types.
-
-4. **Contextual Analysis** 🌐:
-   - Exploring how different contexts (e.g., professional, social, academic) influence the language and traits associated with personality types.
-   - Developing **context-specific personality typing models** to enhance the relevance and accuracy of predictions.
-
-5. **Applications in AI and Personalization** 🤖:
-   - Integrating the findings into **AI-driven applications** for personalized content recommendations, career counselling, and mental health support.
-   - Developing more sophisticated personality prediction models that can dynamically adapt to new data and user interactions.
-
-6. **Cross-Cultural Studies** 🌏:
-   - Conducting cross-cultural studies to understand how personality descriptions **vary across different cultures and languages**.
-   - Adapting personality analysis models to account for **cultural nuances and differences**.
-
-
 ---
 ---
 ## Discussion <a name="discussion"></a>
 
-The exploration of the MBTI dataset through various analytical techniques has yielded several insights into the distinct language and characteristics associated with each MBTI type. In this section, we will delve deeper into the results, examining the significance of the findings and their implications for understanding personality traits and behaviors.
+The exploration of the MBTI dataset through various analytical techniques has yielded several insights into the distinct language and characteristics associated with each MBTI type. In this section, we will delve deeper into the results, examining the significance of the findings and their implications for understanding personality traits and behaviours.
 
 ### Average Word Count for Each MBTI Type
 
@@ -92,9 +64,9 @@ The average word count analysis reveals the verbosity of descriptions associated
 
 1. **INTJ (7.97 words)** and **INTP (7.68 words)** have the highest average word counts, indicating that descriptions of individuals with these personality types tend to be more detailed. This aligns with the introspective and analytical nature of these types, who are often described with complex and nuanced language.
    
-2. **ESFJ (5.90 words)** and **ISFJ (6.00 words)** have the lowest average word counts, suggesting that descriptions of these personality types are more concise. This could be attributed to their practical and straightforward nature, which might not require as elaborate descriptions.
+2. **ESFJ (5.90 words)** and **ISFJ (6.00 words)** have the lowest average word counts, suggesting that descriptions of these personality types are more concise. This could be attributed to their practical and straightforward nature, which might not require elaborate descriptions.
 
-3. The overall distribution of average word counts suggests that thinking and judging types (T and J) tend to have longer descriptions, possibly reflecting their more structured and detailed-oriented nature. In contrast, feeling and perceiving types (F and P) have relatively shorter descriptions, which may reflect their more spontaneous and flexible nature.
+3. The overall distribution of average word counts suggests that thinking and judging types (T and J) tend to have longer descriptions, possibly reflecting their more structured and detail-oriented nature. In contrast, feeling and perceiving types (F and P) have relatively shorter descriptions, which may reflect their more spontaneous and flexible nature.
 
 ### Top 5 Most Common Words for Each MBTI Type
 
@@ -150,6 +122,33 @@ The exploration of the MBTI dataset through data cleaning, preprocessing, TF-IDF
 
 ---
 ---
+
+## Future Work
+The analysis and findings presented in this study open several exciting avenues for future research and development. Here are some potential directions for future work:
+
+1. **Refinement of Text Processing Techniques** ✨:
+   - **Enhancing text preprocessing** methods to better handle variations in language, slang, and regional dialects can improve the accuracy of personality analysis.
+   - **Incorporating advanced NLP techniques** such as BERT or GPT for a deeper semantic understanding of descriptions.
+
+2. **Expanding the Dataset** 📈:
+   - **Mining more data**: We are currently in the process of collecting additional personality descriptions from various sources to expand the size of our dataset.
+   - **Including more personality systems** beyond MBTI, such as the Big Five or Enneagram, to create a more comprehensive personality typing model.
+
+3. **Temporal Analysis** ⏳:
+   - Investigating how descriptions of personality types **change over time** can provide insights into the evolving nature of personality traits and societal perceptions.
+   - Analyzing the impact of **major events or cultural shifts** on the language used to describe personality types.
+
+4. **Contextual Analysis** 🌐:
+   - Exploring how different contexts (e.g., professional, social, academic) influence the language and traits associated with personality types.
+   - Developing **context-specific personality typing models** to enhance the relevance and accuracy of predictions.
+
+5. **Applications in AI and Personalization** 🤖:
+   - Integrating the findings into **AI-driven applications** for personalized content recommendations, career counselling, and mental health support.
+   - Developing more sophisticated personality prediction models that can dynamically adapt to new data and user interactions.
+
+6. **Cross-Cultural Studies** 🌏:
+   - Conducting cross-cultural studies to understand how personality descriptions **vary across different cultures and languages**.
+   - Adapting personality analysis models to account for **cultural nuances and differences**.
 
 ## Acknowledgements
 A special thanks to [personality-database.com](https://www.personality-database.com/) for providing the data and inspiration for this project. We also acknowledge the contributions of the open-source community for their invaluable tools and resources.
