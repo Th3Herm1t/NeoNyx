@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>README.md</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+html,footer,header{
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Custom MD PDF CSS
+ */
+html,footer,header{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+
+ }
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file:///r%3A/2.Travail/1.Enseignement/Cours/_1.Outils/2.Developpement/1.SCSS/main.css" type="text/css"><link rel="stylesheet" href="file:///d%3A/rdaros/Cours/_1.Outils/2.Developpement/1.SCSS/main.css" type="text/css">
+</head>
+
+<body>
+    <h1 id="neonyx">NeoNyx</h1>
+<p>🌟 <strong>NeoNyx</strong> - An AI-powered ecosystem for personality typing and analysis</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#project-overview">Project Overview</a></li>
+<li><a href="#dataset-description">Dataset Description</a></li>
+<li><a href="#exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</a></li>
+<li><a href="#future-work">Future Work</a></li>
+<li><a href="#discussion">Discussion</a></li>
+<li><a href="#acknowledgements">Acknowledgements</a></li>
+<li><a href="#contact">Contact</a></li>
+</ol>
+<h2 id="project-overview">Project Overview</h2>
+<p>NeoNyx is an innovative project focused on creating an ecosystem of AI tools for personality typing and analysis. Leveraging a comprehensive dataset of personality profiles from multiple typing systems, NeoNyx aims to provide insights and applications across various domains, including psychology, marketing, HR, data science, and AI development.</p>
+<h2 id="dataset-description">Dataset Description</h2>
+<p>The dataset, <code>combined_data_highest_voted.csv</code>, contains detailed personality profiles, descriptions, and multiple typing systems for public figures. Special thanks to <a href="https://www.personality-database.com/">personality-database.com</a> for providing the data and inspiration for this project! We ensured compliance with their <code>robots.txt</code> and limited our request rate.</p>
+<p>The dataset is hosted and availabel here on <a href="https://www.kaggle.com/datasets/abdelkarimbsalah/nyx-2-1">Kaggle</a> licensed under the <a href="LICENSE">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>.</p>
+<p>The cloud version of the analysis notebook is also available here <a href="https://www.kaggle.com/code/abdelkarimbsalah/neonyx/">here</a>.</p>
+<h3 id="csv-file-details">CSV File Details</h3>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>Unique identifier for each entry</td>
+</tr>
+<tr>
+<td><code>mbti_profile</code></td>
+<td>Name of the public figure</td>
+</tr>
+<tr>
+<td><code>wiki_description</code></td>
+<td>Text description of the individual sourced from Wikipedia</td>
+</tr>
+<tr>
+<td><code>sub_cat_id</code></td>
+<td>Sub-category identifier</td>
+</tr>
+<tr>
+<td><code>cat_id</code></td>
+<td>Category identifier</td>
+</tr>
+<tr>
+<td><code>property_id</code></td>
+<td>Property identifier</td>
+</tr>
+<tr>
+<td><code>total_vote_counts</code></td>
+<td>Total number of votes received for the entry</td>
+</tr>
+<tr>
+<td><code>system_1</code></td>
+<td>Personality type according to the first system (MBTI)</td>
+</tr>
+<tr>
+<td><code>system_2</code></td>
+<td>Personality type according to the second system (Enneagram)</td>
+</tr>
+<tr>
+<td><code>system_3</code></td>
+<td>Personality type according to the third system (Socionics)</td>
+</tr>
+<tr>
+<td><code>system_4</code></td>
+<td>Personality type according to the fourth system (Alignment)</td>
+</tr>
+<tr>
+<td><code>system_5</code></td>
+<td>Personality type according to the fifth system (Instinctual Variant)</td>
+</tr>
+<tr>
+<td><code>system_6</code></td>
+<td>Personality type according to the sixth system (Tritype)</td>
+</tr>
+<tr>
+<td><code>system_7</code></td>
+<td>Personality type according to the seventh system (Temperament)</td>
+</tr>
+<tr>
+<td><code>system_8</code></td>
+<td>Personality type according to the eighth system (Attitudinal Psyche)</td>
+</tr>
+<tr>
+<td><code>system_9</code></td>
+<td>Personality type according to the ninth system (Big 5 - SLOAN)</td>
+</tr>
+<tr>
+<td><code>system_10</code></td>
+<td>Personality type according to the tenth system (Hemispheric Personality Typing)</td>
+</tr>
+<tr>
+<td><code>system_11</code></td>
+<td>Personality type according to the eleventh system (Classic Jungian)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="note">Note</h4>
+<ul>
+<li>The value &quot;XXXX&quot; in the typing systems columns indicates a missing value.</li>
+<li>Descriptions provide valuable context for each profile, allowing for in-depth analysis and comparison across different personality typing systems.</li>
+</ul>
+<h2 id="exploratory-data-analysis-eda">Exploratory Data Analysis (EDA)</h2>
+<p>The <code>\NeoNyx\Notebooks\EDA and word frequency analysis.ipynb</code> notebook provides a detailed analysis of the dataset, including data cleaning, preprocessing, TF-IDF analysis, and word cloud generation. The results highlight key insights, such as average word count and most common words for each MBTI type.</p>
+<p>You can view the full analysis in the [\NeoNyx\Notebooks\EDA and word frequency analysis.ipynb](\NeoNyx\Notebooks\EDA and word frequency analysis.ipynb) notebook.</p>
+<h2 id="future-work">Future Work</h2>
+<p>The analysis and findings presented in this study open several exciting avenues for future research and development. Here are some potential directions for future work:</p>
+<ol>
+<li>
+<p><strong>Refinement of Text Processing Techniques</strong> ✨:</p>
+<ul>
+<li><strong>Enhancing text preprocessing</strong> methods to better handle variations in language, slang, and regional dialects can improve the accuracy of personality analysis.</li>
+<li><strong>Incorporating advanced NLP techniques</strong> such as BERT or GPT for deeper semantic understanding of descriptions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Expanding the Dataset</strong> 📈:</p>
+<ul>
+<li><strong>Mining more data</strong>: We are currently in the process of collecting additional personality descriptions from various sources to expand the size of our dataset.</li>
+<li><strong>Including more personality systems</strong> beyond MBTI, such as the Big Five or Enneagram, to create a more comprehensive personality typing model.</li>
+</ul>
+</li>
+<li>
+<p><strong>Temporal Analysis</strong> ⏳:</p>
+<ul>
+<li>Investigating how descriptions of personality types <strong>change over time</strong> can provide insights into the evolving nature of personality traits and societal perceptions.</li>
+<li>Analyzing the impact of <strong>major events or cultural shifts</strong> on the language used to describe personality types.</li>
+</ul>
+</li>
+<li>
+<p><strong>Contextual Analysis</strong> 🌐:</p>
+<ul>
+<li>Exploring how different contexts (e.g., professional, social, academic) influence the language and traits associated with personality types.</li>
+<li>Developing <strong>context-specific personality typing models</strong> to enhance the relevance and accuracy of predictions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Applications in AI and Personalization</strong> 🤖:</p>
+<ul>
+<li>Integrating the findings into <strong>AI-driven applications</strong> for personalized content recommendations, career counseling, and mental health support.</li>
+<li>Developing more sophisticated personality prediction models that can dynamically adapt to new data and user interactions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cross-Cultural Studies</strong> 🌏:</p>
+<ul>
+<li>Conducting cross-cultural studies to understand how personality descriptions <strong>vary across different cultures and languages</strong>.</li>
+<li>Adapting personality analysis models to account for <strong>cultural nuances and differences</strong>.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<hr>
+<h2 id="discussion-a-name%22discussion%22a">Discussion <a name="discussion"></a></h2>
+<p>The exploration of the MBTI dataset through various analytical techniques has yielded several insights into the distinct language and characteristics associated with each MBTI type. In this section, we will delve deeper into the results, examining the significance of the findings and their implications for understanding personality traits and behaviors.</p>
+<h3 id="average-word-count-for-each-mbti-type">Average Word Count for Each MBTI Type</h3>
+<p>The average word count analysis reveals the verbosity of descriptions associated with each MBTI type. Here are some notable observations:</p>
+<ol>
+<li>
+<p><strong>INTJ (7.97 words)</strong> and <strong>INTP (7.68 words)</strong> have the highest average word counts, indicating that descriptions of individuals with these personality types tend to be more detailed. This aligns with the introspective and analytical nature of these types, who are often described with complex and nuanced language.</p>
+</li>
+<li>
+<p><strong>ESFJ (5.90 words)</strong> and <strong>ISFJ (6.00 words)</strong> have the lowest average word counts, suggesting that descriptions of these personality types are more concise. This could be attributed to their practical and straightforward nature, which might not require as elaborate descriptions.</p>
+</li>
+<li>
+<p>The overall distribution of average word counts suggests that thinking and judging types (T and J) tend to have longer descriptions, possibly reflecting their more structured and detailed-oriented nature. In contrast, feeling and perceiving types (F and P) have relatively shorter descriptions, which may reflect their more spontaneous and flexible nature.</p>
+</li>
+</ol>
+<h3 id="top-5-most-common-words-for-each-mbti-type">Top 5 Most Common Words for Each MBTI Type</h3>
+<p>The analysis of the top 5 most common words for each MBTI type provides a glimpse into the unique traits and interests that characterize different personality types. Here are some detailed insights:</p>
+<ol>
+<li>
+<p><strong>ESFP</strong>: Words like &quot;dancer,&quot; &quot;energetic,&quot; and &quot;sports&quot; highlight the outgoing, energetic, and active nature of ESFPs. These individuals are often described as lively and enthusiastic, which is reflected in their common words.</p>
+</li>
+<li>
+<p><strong>ENTP</strong>: Terms such as &quot;philosopher,&quot; &quot;sarcastic,&quot; and &quot;animator&quot; emphasize the intellectual and creative traits of ENTPs. They are known for their quick wit and love for debate, which is evident from the language used to describe them.</p>
+</li>
+<li>
+<p><strong>ENFP</strong>: Words like &quot;cheerful,&quot; &quot;energetic,&quot; and &quot;dancer&quot; underscore the warm, enthusiastic, and creative nature of ENFPs. Their descriptions reflect their ability to inspire and bring positive energy to social interactions.</p>
+</li>
+<li>
+<p><strong>ISTJ</strong>: Words such as &quot;soldier,&quot; &quot;fought,&quot; and &quot;information&quot; indicate the disciplined, reliable, and detail-oriented nature of ISTJs. Their descriptions often emphasize their dedication to duty and precision.</p>
+</li>
+<li>
+<p><strong>ISFJ</strong>: Common words like &quot;shy,&quot; &quot;gentle,&quot; and &quot;timid&quot; highlight the nurturing, compassionate, and reserved nature of ISFJs. These individuals are often described in terms that reflect their caring and supportive demeanor.</p>
+</li>
+<li>
+<p><strong>INTP</strong>: Terms such as &quot;philosopher,&quot; &quot;computer,&quot; and &quot;theory&quot; emphasize the analytical and abstract thinking traits of INTPs. Their descriptions often focus on their intellectual pursuits and love for theoretical concepts.</p>
+</li>
+<li>
+<p><strong>ENTJ</strong>: Words like &quot;businessman,&quot; &quot;villain,&quot; and &quot;ruthless&quot; reflect the assertive, strategic, and ambitious nature of ENTJs. These individuals are often described as natural leaders with a strong drive to achieve their goals.</p>
+</li>
+<li>
+<p><strong>INTJ</strong>: Common terms such as &quot;genius,&quot; &quot;philosopher,&quot; and &quot;theory&quot; highlight the intellectual and strategic traits of INTJs. Their descriptions often emphasize their ability to think critically and plan meticulously.</p>
+</li>
+<li>
+<p><strong>INFP</strong>: Words like &quot;shy,&quot; &quot;literature,&quot; and &quot;visual&quot; underscore the introspective, creative, and empathetic nature of INFPs. Their descriptions often reflect their deep inner world and love for artistic expression.</p>
+</li>
+<li>
+<p><strong>INFJ</strong>: Terms such as &quot;philosopher,&quot; &quot;prize,&quot; and &quot;novelist&quot; emphasize the insightful and idealistic traits of INFJs. Their descriptions often focus on their visionary thinking and deep sense of purpose.</p>
+</li>
+<li>
+<p><strong>ESTJ</strong>: Words like &quot;attitude,&quot; &quot;ruthless,&quot; and &quot;lawyer&quot; highlight the practical, decisive, and assertive nature of ESTJs. These individuals are often described as efficient organizers who value structure and order.</p>
+</li>
+<li>
+<p><strong>ISTP</strong>: Common terms such as &quot;soldier,&quot; &quot;mercenary,&quot; and &quot;drummer&quot; reflect the adventurous, practical, and resourceful nature of ISTPs. Their descriptions often emphasize their hands-on approach to life.</p>
+</li>
+<li>
+<p><strong>ISFP</strong>: Words like &quot;dancer,&quot; &quot;guitar,&quot; and &quot;label&quot; underscore the artistic, sensitive, and spontaneous nature of ISFPs. Their descriptions often reflect their love for creative expression and aesthetics.</p>
+</li>
+<li>
+<p><strong>ESTP</strong>: Terms such as &quot;businessman,&quot; &quot;sports,&quot; and &quot;violent&quot; emphasize the energetic, pragmatic, and competitive traits of ESTPs. These individuals are often described as dynamic problem-solvers who thrive in fast-paced environments.</p>
+</li>
+<li>
+<p><strong>ESFJ</strong>: Words like &quot;cheerful,&quot; &quot;presenter,&quot; and &quot;sweet&quot; highlight the warm, sociable, and supportive nature of ESFJs. Their descriptions often reflect their ability to create harmony and foster positive relationships.</p>
+</li>
+<li>
+<p><strong>ENFJ</strong>: Common terms such as &quot;journalist,&quot; &quot;cooking,&quot; and &quot;entrepreneur&quot; reflect the charismatic, empathetic, and visionary traits of ENFJs. These individuals are often described as inspiring leaders who are dedicated to helping others.</p>
+</li>
+</ol>
+<h4 id="implications-and-significance">Implications and Significance</h4>
+<ol>
+<li>
+<p><strong>Personality-Specific Language</strong>: The analysis confirms that different MBTI types are associated with distinct linguistic patterns. This can be leveraged in various applications, such as targeted content creation, personalized marketing, and improved communication strategies.</p>
+</li>
+<li>
+<p><strong>Enhanced Understanding</strong>: By identifying the common words and average word counts for each MBTI type, we gain a deeper understanding of how different personalities are perceived and described. This can enhance our ability to recognize and appreciate diverse personality traits in social and professional settings.</p>
+</li>
+<li>
+<p><strong>Applications in AI</strong>: The insights gained from this analysis can be utilized to improve AI models for personality typing and profiling. For instance, incorporating TF-IDF and common word analysis can enhance the accuracy of personality prediction models.</p>
+</li>
+<li>
+<p><strong>Cultural and Contextual Factors</strong>: The results also highlight the importance of considering cultural and contextual factors in personality descriptions. Words like &quot;dancer&quot; and &quot;sports&quot; may carry different connotations in different cultures, and understanding these nuances is crucial for accurate personality analysis.</p>
+</li>
+<li>
+<p><strong>Future Research</strong>: Further research can explore the temporal and contextual variations in personality descriptions. For example, analyzing how the language used to describe personalities evolves over time or in different contexts (e.g., social media vs. professional settings) can provide additional valuable insights.</p>
+</li>
+</ol>
+<h3 id="conclusion">Conclusion</h3>
+<p>The exploration of the MBTI dataset through data cleaning, preprocessing, TF-IDF analysis, and word cloud generation has provided valuable insights into the distinct language and characteristics associated with each MBTI type. These findings not only enhance our understanding of personality traits and behaviors but also offer practical applications in fields such as AI, marketing, and communication. Future research can build on these insights to further refine personality analysis and explore new dimensions of personality profiling.</p>
+<hr>
+<hr>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>A special thanks to <a href="https://www.personality-database.com/">personality-database.com</a> for providing the data and inspiration for this project. We also acknowledge the contributions of the open-source community for their invaluable tools and resources.</p>
+<h2 id="contact">Contact</h2>
+<p>For any questions, suggestions, or collaborations, feel free to reach out:</p>
+<ul>
+<li><strong>Email</strong>: <a href="mailto:abdelkarimbsalah@gmail.com">abdelkarimbsalah@gmail.com</a></li>
+<li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/abdelkarim-b-salah/">Abdelkarim Ben Salah</a></li>
+<li><strong>Kaggle</strong>: <a href="https://www.kaggle.com/abdelkarimbsalah">abdelkarimbsalah</a></li>
+</ul>
+<hr>
+<p>📄 <strong>License</strong>: This project is licensed under the <a href="LICENSE">Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>.</p>
+
+</body>
+
+</html>
