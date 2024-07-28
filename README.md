@@ -17,7 +17,7 @@ NeoNyx is an innovative project focused on creating an ecosystem of AI tools for
 ## Dataset Description
 - The dataset, `combined_data_highest_voted.csv`, contains detailed personality profiles, descriptions, and multiple typing systems for public figures. Special thanks to [personality-database.com](https://www.personality-database.com/) for providing the data and inspiration for this project! We ensured compliance with their `robots.txt` and limited our request rate.
 
-- The dataset is hosted and availabel here on [Kaggle](https://www.kaggle.com/datasets/abdelkarimbsalah/nyx-2-1) licensed under the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE).
+- The dataset is hosted and available here on [Kaggle](https://www.kaggle.com/datasets/abdelkarimbsalah/nyx-2-1) licensed under the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE).
 
 - The cloud version of the analysis notebook is also available on Kaggle [here](https://www.kaggle.com/code/abdelkarimbsalah/neonyx/). 
 
@@ -48,16 +48,16 @@ NeoNyx is an innovative project focused on creating an ecosystem of AI tools for
 - Descriptions provide valuable context for each profile, allowing for in-depth analysis and comparison across different personality typing systems.
 
 ## Exploratory Data Analysis (EDA)
-The `\NeoNyx\Notebooks\EDA and word frequency analysis.ipynb` notebook provides a detailed analysis of the dataset, including data cleaning, preprocessing, TF-IDF analysis, and word cloud generation. The results highlight key insights, such as average word count and most common words for each MBTI type.
+The `neonyx.ipynb` notebook provides a detailed analysis of the dataset, including data cleaning, preprocessing, TF-IDF analysis, and word cloud generation. The results highlight key insights, such as average word count and most common words for each MBTI type.
 
-You can view the full analysis in the [\NeoNyx\Notebooks\EDA and word frequency analysis.ipynb](\NeoNyx\Notebooks\EDA and word frequency analysis.ipynb) notebook.
+You can view the full analysis in the [neonyx.ipynb](neonyx.ipynb) notebook.
 
 ## Future Work
 The analysis and findings presented in this study open several exciting avenues for future research and development. Here are some potential directions for future work:
 
 1. **Refinement of Text Processing Techniques** ✨:
    - **Enhancing text preprocessing** methods to better handle variations in language, slang, and regional dialects can improve the accuracy of personality analysis.
-   - **Incorporating advanced NLP techniques** such as BERT or GPT for deeper semantic understanding of descriptions.
+   - **Incorporating advanced NLP techniques** such as BERT or GPT for a deeper semantic understanding of descriptions.
 
 2. **Expanding the Dataset** 📈:
    - **Mining more data**: We are currently in the process of collecting additional personality descriptions from various sources to expand the size of our dataset.
@@ -72,7 +72,7 @@ The analysis and findings presented in this study open several exciting avenues 
    - Developing **context-specific personality typing models** to enhance the relevance and accuracy of predictions.
 
 5. **Applications in AI and Personalization** 🤖:
-   - Integrating the findings into **AI-driven applications** for personalized content recommendations, career counseling, and mental health support.
+   - Integrating the findings into **AI-driven applications** for personalized content recommendations, career counselling, and mental health support.
    - Developing more sophisticated personality prediction models that can dynamically adapt to new data and user interactions.
 
 6. **Cross-Cultural Studies** 🌏:
@@ -108,7 +108,7 @@ The analysis of the top 5 most common words for each MBTI type provides a glimps
 
 4. **ISTJ**: Words such as "soldier," "fought," and "information" indicate the disciplined, reliable, and detail-oriented nature of ISTJs. Their descriptions often emphasize their dedication to duty and precision.
 
-5. **ISFJ**: Common words like "shy," "gentle," and "timid" highlight the nurturing, compassionate, and reserved nature of ISFJs. These individuals are often described in terms that reflect their caring and supportive demeanor.
+5. **ISFJ**: Common words like "shy," "gentle," and "timid" highlight the nurturing, compassionate, and reserved nature of ISFJs. These individuals are often described in terms that reflect their caring and supportive demeanour.
 
 6. **INTP**: Terms such as "philosopher," "computer," and "theory" emphasize the analytical and abstract thinking traits of INTPs. Their descriptions often focus on their intellectual pursuits and love for theoretical concepts.
 
@@ -146,7 +146,7 @@ The analysis of the top 5 most common words for each MBTI type provides a glimps
 
 ### Conclusion
 
-The exploration of the MBTI dataset through data cleaning, preprocessing, TF-IDF analysis, and word cloud generation has provided valuable insights into the distinct language and characteristics associated with each MBTI type. These findings not only enhance our understanding of personality traits and behaviors but also offer practical applications in fields such as AI, marketing, and communication. Future research can build on these insights to further refine personality analysis and explore new dimensions of personality profiling.
+The exploration of the MBTI dataset through data cleaning, preprocessing, TF-IDF analysis, and word cloud generation has provided valuable insights into the distinct language and characteristics associated with each MBTI type. These findings not only enhance our understanding of personality traits and behaviours but also offer practical applications in fields such as AI, marketing, and communication. Future research can build on these insights to further refine personality analysis and explore new dimensions of personality profiling.
 
 ---
 ---
