@@ -15,11 +15,11 @@
 NeoNyx is an innovative project focused on creating an ecosystem of AI tools for personality typing and analysis. Leveraging a comprehensive dataset of personality profiles from multiple typing systems, NeoNyx aims to provide insights and applications across various domains, including psychology, marketing, HR, data science, and AI development.
 
 ## Dataset Description
-    - The dataset, `combined_data_highest_voted.csv`, contains detailed personality profiles, descriptions, and multiple typing systems for public figures. Special thanks to [personality-database.com](https://www.personality-database.com/) for providing the data and inspiration for this project! We ensured compliance with their `robots.txt` and limited our request rate.
+- The dataset, `combined_data_highest_voted.csv`, contains detailed personality profiles, descriptions, and multiple typing systems for public figures. Special thanks to [personality-database.com](https://www.personality-database.com/) for providing the data and inspiration for this project! We ensured compliance with their `robots.txt` and limited our request rate.
 
-    - The dataset is hosted and availabel here on [Kaggle](https://www.kaggle.com/datasets/abdelkarimbsalah/nyx-2-1) licensed under the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE).
+- The dataset is hosted and availabel here on [Kaggle](https://www.kaggle.com/datasets/abdelkarimbsalah/nyx-2-1) licensed under the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE).
 
-    - The cloud version of the analysis notebook is also available on Kaggle here [here](https://www.kaggle.com/code/abdelkarimbsalah/neonyx/). 
+- The cloud version of the analysis notebook is also available on Kaggle here [here](https://www.kaggle.com/code/abdelkarimbsalah/neonyx/). 
 
 ### CSV File Details
 | Column          | Description                                                                                       |
