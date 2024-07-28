@@ -19,7 +19,7 @@ NeoNyx is an innovative project focused on creating an ecosystem of AI tools for
 
 - The dataset is hosted and availabel here on [Kaggle](https://www.kaggle.com/datasets/abdelkarimbsalah/nyx-2-1) licensed under the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](LICENSE).
 
-- The cloud version of the analysis notebook is also available on Kaggle here [here](https://www.kaggle.com/code/abdelkarimbsalah/neonyx/). 
+- The cloud version of the analysis notebook is also available on Kaggle [here](https://www.kaggle.com/code/abdelkarimbsalah/neonyx/). 
 
 ### CSV File Details
 | Column          | Description                                                                                       |
